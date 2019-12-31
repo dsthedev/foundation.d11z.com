@@ -1,6 +1,6 @@
 {
   "name": "foundation-d11z-com",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "A personal exploration of the Foundation front-end framework for website development.",
   "main": "gulpfile.babel.js",
   "scripts": {

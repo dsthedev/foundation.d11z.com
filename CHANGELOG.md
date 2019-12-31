@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 0.0.4 (2019.12.30)
+
+- Adds "about" subfolder in pages/ as an example of clean URL structure
+- Adds header & footer (not in partials yet)
+
 ## Version 0.0.3 (2019.12.30)
 
 - Adds layout for 404 (also as an example for custom layouts)

@@ -9,7 +9,44 @@
     <link rel="stylesheet" href="{{root}}assets/css/app.css" />
   </head>
   <body class="{{ page }}">
-    {{> browserupgrade}} {{> body}}
+    {{> browserupgrade}}
+
+    <header id="site-header" role="banner">
+      <div class="top-bar">
+        <div class="top-bar-left">
+          <ul class="menu">
+            <li>
+              <a href="{{ root }}">Foundation</a>
+            </li>
+          </ul>
+        </div>
+        <div class="top-bar-right">
+          <ul class="menu">
+            <li><a href="{{ root }}/about">About</a></li>
+            <li><a href="{{ root }}/styleguide">Style Guide</a></li>
+            <li><a href="{{ root }}/404">404</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    {{> body}}
+
+    <footer id="site-footer" class="title-bar" role="contentinfo">
+      <div class="grid-container text-center">
+        <p class="h5 copyright">
+          &copy; <a href="https://www.dsthedev.com/" target="_blank">dsthedev</a> <br /><small
+            >Powered by Foundation</small
+          >
+        </p>
+
+        <p class="source-org">
+          Made by
+          <a href="https://www.dsthedev.com/" target="_blank">dsthedev</a> with
+          <strong>&heartsuit;</strong>
+        </p>
+      </div>
+    </footer>
 
     <script src="{{root}}assets/js/app.js"></script>
 
