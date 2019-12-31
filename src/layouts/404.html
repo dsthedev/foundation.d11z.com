@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>dsthedev | Foundation -- {{ title }}</title>
+    <meta name="description" content="{{ description }}" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{root}}assets/css/app.css" />
+  </head>
+  <body class="{{ page }}">
+    {{> browserupgrade}} {{> body}}
+
+    <script>
+      window.ga = function() {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-125120979-4", "auto");
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
+</html>

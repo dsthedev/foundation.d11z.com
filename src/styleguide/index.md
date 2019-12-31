@@ -67,9 +67,11 @@ In the Grid you can nest cells down as far as you'd like. Just embed grid-x insi
 
 ```html
 <div class="grid-x">
-  <div class="small-8 cell">8
+  <div class="small-8 cell">
+    8
     <div class="grid-x">
-      <div class="small-8 cell">8 Nested
+      <div class="small-8 cell">
+        8 Nested
         <div class="grid-x">
           <div class="small-8 cell">8 Nested Again</div>
           <div class="small-4 cell">4</div>

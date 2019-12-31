@@ -1,4 +1,4 @@
-# Your project's server will run on localhost:xxxx at this port
+# The project's server will run on localhost:xxxx at this port
 PORT: 8000
 
 # UnCSS will use these settings
@@ -25,3 +25,5 @@ PATHS:
   # Paths to JavaScript entry points for webpack to bundle modules
   entries:
     - "src/assets/js/app.js"
+  apache:
+    - "src/.htaccess"
