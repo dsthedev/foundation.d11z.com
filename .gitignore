@@ -1,8 +1,12 @@
+# macOS
 .DS_Store
+
+# Node / npm
 node_modules
 npm-debug.log
-bower_components
+
+# Generated Project
 dist
+
+# VIM
 *.swp
-.cache
-.idea

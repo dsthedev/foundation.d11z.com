@@ -2,9 +2,7 @@
 
 [![devDependency Status](https://david-dm.org/zurb/foundation-zurb-template/dev-status.svg)](https://david-dm.org/zurb/foundation-zurb-template#info=devDependencies)
 
-**Please open all issues with this template on the main [Foundation for Sites](https://github.com/zurb/foundation-sites/issues) repo.**
-
-This is the official ZURB Template for use with [Foundation for Sites](http://foundation.zurb.com/sites). We use this template at ZURB to deliver static code to our clients. It has a Gulp-powered build system with these features:
+This is a personal exploration project using the [Foundation for Sites](http://foundation.zurb.com/sites) "ZURB" template for website development. It has a Gulp-powered build system with these features:
 
 - Handlebars HTML templates with Panini
 - Sass compilation and prefixing
@@ -17,54 +15,31 @@ This is the official ZURB Template for use with [Foundation for Sites](http://fo
 
 ## Installation
 
-To use this template, your computer needs:
+To work on this project, your computer needs:
 
-- [NodeJS](https://nodejs.org/en/) (Version 6 or greater recommended, tested with 6.11.4 and 8.12.0)
+- [NodeJS](https://nodejs.org/en/) (Version 11.15.0 or greater recommended, tested with 11.15.0)
 - [Git](https://git-scm.com/)
 
-This template can be installed with the Foundation CLI, or downloaded and set up manually.
+```bash
+cd path/to/projects
+git clone https://github.com/dsthedev/foundation.d11z.com.git
+cd foundation.d11z.com
+npm install
+```
 
-### Using the CLI
+**Notice:** The installation can take a while (5+ min) depending on your network / hardware.
 
-Install the Foundation CLI with this command:
+## Development
 
 ```bash
-npm install foundation-cli --global
+cd path/to/foundation.d11z.com
+npm start
 ```
 
-Use this command to set up a blank Foundation for Sites project with this template:
+To create compressed, production-ready assets, run `npm build`.
 
-```bash
-foundation new --framework sites --template zurb
-```
+## Resources
 
-The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
-
-Now `cd` to your project name and to start your project run 
-
-```bash
-foundation watch
-```
-
-### Manual Setup
-
-To manually set up the template, first download it with Git:
-
-```bash
-git clone https://github.com/zurb/foundation-zurb-template projectname
-```
-
-Then open the folder in your command line, and install the needed dependencies:
-
-```bash
-cd projectname
-yarn
-```
-
-Finally, run `yarn start` to run Gulp. Your finished site will be created in a folder called `dist`, viewable at this URL:
-
-```
-http://localhost:8000
-```
-
-To create compressed, production-ready assets, run `yarn run build`.
+- [NVM](https://github.com/nvm-sh/nvm) - I recommend using this to manage node / npm on your computer to easily switch versions in case a new version breaks something.
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - Auto format most files with common standards
+  - I recommend using `"editor.formatOnSave": true` for almost thought-free cleaner code
