@@ -1,4 +1,4 @@
-# ZURB Template
+# foundation.d11z.com
 
 [![devDependency Status](https://david-dm.org/zurb/foundation-zurb-template/dev-status.svg)](https://david-dm.org/zurb/foundation-zurb-template#info=devDependencies)
 
@@ -38,8 +38,46 @@ npm start
 
 To create compressed, production-ready assets, run `npm build`.
 
+## Publish
+
+To publish this project to a live domain, I recommend using the SFTP plugin for Visual Studio Code to connect and sync files up. Example:
+
+```json
+[
+  {
+    "name": "Project Name",
+    "ignore": [
+      ".vscode",
+      ".git",
+      ".DS_Store",
+      "cron",
+      ".well-known",
+      "cgi-bin",
+      "docs",
+      "fonts",
+      "images",
+      "swfs",
+      "*.pem"
+    ],
+    "port": 21,
+    "protocol": "sftp",
+    "username": "user@sub.domain.com",
+    "password": "****************", // Not recommended to keep this in, better to use ssh or enter manually (tedious but secure!)
+    "context": "./dist/",
+    "host": "sub.domain.com",
+    "remotePath": "/",
+    "downloadOnOpen": false,
+    "uploadOnSave": true
+  }
+]
+```
+
 ## Resources
 
 - [NVM](https://github.com/nvm-sh/nvm) - I recommend using this to manage node / npm on your computer to easily switch versions in case a new version breaks something.
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - Auto format most files with common standards
   - I recommend using `"editor.formatOnSave": true` for almost thought-free cleaner code
+
+## Known Issues
+
+- The use of triple-space in markdown files with sherpa doesn't match format standards.  If format on save is enabled it will strip them out and break the sticky sidebar nav

@@ -1,5 +1,16 @@
 # Changelog
 
+## Version 0.0.2 (2019.12.30)
+
+- Adds html5-boilerplate as dev dep for reference
+- Pulls modified `.htaccess` file from `html5-boilerplate` into `src/`
+- Disables open in `gulpfile.babel.js`
+- Adds `apache()` function to gulp flow to copy `.htaccess` file alone during build process
+- Adds `.vscode` to `.gitignore` because sftp config is in there!
+- Adds `.code-workspace` file for easier project management within VSCode
+- Adds `sherpaDirs()` function to `gulpfile.babel.js` to put styleguide in a "subfolder" (no .html extension!)
+  - Also adds examples of adding new folders and/or styleguide files (to use for documentation maybe?)
+
 ## Version 0.0.1 (2019.12.30)
 
 - Updates `readme.md` for use within this project's scope

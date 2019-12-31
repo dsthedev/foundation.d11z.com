@@ -35,7 +35,7 @@ gulp.task(
   "build",
   gulp.series(
     clean,
-    gulp.parallel(pages, javascript, images, copy),
+    gulp.parallel(pages, javascript, images, copy, apache, sherpaDirs),
     sass,
     styleGuide
   )
@@ -54,6 +54,11 @@ function clean(done) {
 // This task skips over the "img", "js", and "scss" folders, which are parsed separately
 function copy() {
   return gulp.src(PATHS.assets).pipe(gulp.dest(PATHS.dist + "/assets"));
+}
+
+// Copy the src htaccess file over to dist/ for production use
+function apache() {
+  return gulp.src(PATHS.apache).pipe(gulp.dest(PATHS.dist));
 }
 
 // Copy page templates into finished HTML files
@@ -78,16 +83,35 @@ function resetPages(done) {
   done();
 }
 
+function sherpaDirs() {
+  return (
+    gulp
+      .src("*.*", { read: false })
+      // .pipe(gulp.dest(PATHS.dist + "/folder-name/"))
+      .pipe(gulp.dest(PATHS.dist + "/styleguide/"))
+  );
+}
+
 // Generate a style guide from the Markdown content and HTML template in styleguide/
 function styleGuide(done) {
   sherpa(
     "src/styleguide/index.md",
     {
-      output: PATHS.dist + "/styleguide.html",
+      output: PATHS.dist + "/styleguide/index.html",
       template: "src/styleguide/template.html"
     },
     done
   );
+
+  // Uncomment to add another page, be sure folder-name is created in sherpaDirs() function first!
+  // sherpa(
+  //   "src/styleguide/index.md",
+  //   {
+  //     output: PATHS.dist + "/folder-name/index.html",
+  //     template: "src/styleguide/template.html"
+  //   },
+  //   done
+  // );
 }
 
 // Compile Sass into CSS
@@ -171,7 +195,8 @@ function server(done) {
   browser.init(
     {
       server: PATHS.dist,
-      port: PORT
+      port: PORT,
+      open: false
     },
     done
   );
