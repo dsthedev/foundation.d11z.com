@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 0.0.3 (2019.12.30)
+
+- Adds layout for 404 (also as an example for custom layouts)
+- Adds 404 page content (used for .htaccess rule)
+- Adds browserupgrade notice as a partial (also as an example)
+
 ## Version 0.0.2 (2019.12.30)
 
 - Adds html5-boilerplate as dev dep for reference
