@@ -1,86 +1,133 @@
 ---
-title: Home
+title: Welcome
 description: A personal exploration of the Foundation front-end framework for website development.
 layout: default
 ---
 
-<main id="site-content" class="grid-containerss">
-  <div class="grid-x grid-padding-x align-center">
-    <section class="cell medium-10 large-8">
-      <div class="callout">
-        <h1>Welcome to Foundation</h1>
-        <p>
-          Foundation is the most advanced front-end framework in the world. This
-          site is the result of me exploring it's features, and will serve as a
-          personal reference.
-        </p>
-      </div>
-    </section>
-
+<main id="site-content" class="site-content">
+  <header id="welcome-hero" class="welcome-hero">
     <div class="grid-container">
-      <section class="cell">
-        <h2>Have Some Text:</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-          vehicula justo vitae luctus egestas. Vivamus rutrum quam turpis, eu
-          aliquet turpis tempus vitae. Donec sed erat diam. Nullam massa sem,
-          placerat eu consequat non, dictum a enim. Sed neque turpis, mollis
-          vitae malesuada non, hendrerit luctus ante. Nunc interdum mauris nec
-          nibh fermentum dignissim. Integer dolor nisl, tincidunt ac dignissim
-          tincidunt, laoreet sed sapien. Aliquam nulla dui, consequat a nisi
-          congue, condimentum consectetur ex. Sed egestas egestas purus, sed
-          pharetra libero rutrum sit amet. Quisque auctor at lacus et auctor.
-          Sed sodales neque et sem molestie sodales.
-        </p>
-        <p>
-          Aliquam id velit elementum, lobortis tortor vitae, iaculis turpis.
-          Curabitur sed interdum diam. Praesent lacinia interdum consectetur.
-          Sed purus mauris, euismod sit amet placerat vel, imperdiet a est.
-          Vestibulum sed dui leo. Nunc vel vehicula neque, eu aliquet tortor.
-          Etiam eros est, suscipit a eros nec, interdum iaculis lacus. Nullam
-          tristique, mi vitae placerat fermentum, mi leo sollicitudin mauris, ut
-          euismod libero lacus eu enim. Quisque volutpat tempus dui, vitae
-          ultrices mi scelerisque quis. Maecenas nisi nibh, tristique a
-          dignissim sed, rutrum eget neque. Ut at ligula eros. Nunc tempus
-          tortor non viverra gravida. Phasellus eleifend volutpat elit, sit amet
-          eleifend enim malesuada id. Duis leo libero, vestibulum eget gravida
-          et, volutpat sit amet ex. Praesent at vulputate ipsum, et elementum
-          neque.
-        </p>
-        <p>
-          Vivamus imperdiet eros nunc, et placerat eros egestas a. Pellentesque
-          sed elit tortor. Nam varius a erat at condimentum. Pellentesque vel
-          quam sit amet erat pharetra egestas. Maecenas gravida justo luctus
-          urna pretium, a auctor nunc dignissim. Nunc eu purus odio. Mauris
-          tortor nunc, tempus non felis id, cursus dignissim elit. Aenean id
-          dictum odio. Vivamus laoreet metus elit, nec semper justo pretium sit
-          amet. Quisque cursus, nisi in laoreet fringilla, urna mi tincidunt
-          leo, a rutrum lacus ante id mauris. Cras vehicula ligula a sem laoreet
-          ultricies.
-        </p>
-        <p>
-          Nunc porttitor dapibus tincidunt. Aliquam erat volutpat. Nulla
-          vestibulum mi non odio dignissim viverra. Fusce tempor, dui quis
-          placerat imperdiet, nulla elit scelerisque ligula, sed semper arcu
-          orci at lectus. Nam interdum lacus vitae nunc condimentum accumsan
-          eget vitae lacus. Ut pulvinar sem ante, vel viverra lacus ultrices
-          vel. Nullam pulvinar sodales felis, sit amet vehicula ipsum laoreet a.
-        </p>
-        <p>
-          Aliquam lacinia massa et turpis tincidunt cursus. Sed euismod augue in
-          dolor iaculis scelerisque. Nullam in turpis imperdiet, lobortis dolor
-          et, vulputate velit. Nam ac velit ullamcorper, finibus leo a, ultrices
-          orci. In faucibus, odio eu finibus vehicula, neque purus consectetur
-          lorem, eget dictum ante neque vitae lorem. Vestibulum vitae elit vitae
-          odio hendrerit tempor. Praesent dictum aliquam felis vitae dictum.
-          Donec suscipit erat ex, et accumsan nisl maximus ac. Praesent
-          porttitor neque finibus egestas molestie. Nullam a nisi vel arcu
-          ullamcorper faucibus. Donec vestibulum ullamcorper arcu, eget porta
-          arcu lobortis id. Vivamus condimentum nisl at neque malesuada, at
-          fringilla nulla fringilla. Vestibulum nunc elit, lobortis eu sagittis
-          in, tincidunt ac est. Aenean egestas eleifend ullamcorper.
-        </p>
-      </section>
+      <div class="grid-x grid-padding-x align-center">
+        <div class="cell shrink">
+          <h1 class="callout large text-center">
+            Welcome to Foundation<br />
+            <span class="h4">
+              <small>The Most Advanced Front-end Framework in the World!</small>
+            </span>
+          </h1>
+        </div>
+        <div class="cell meduim-10 large-8">
+          <p>
+            Foundation is the most advanced
+            <span
+              data-tooltip
+              tabindex="1"
+              title="A library allowing for easier, more standards-compliant web design."
+              >front-end framework</span
+            >
+            in the world. This site serves as a showcase of the framework's
+            features, documentation for it, and my own personal commentary. If
+            you find it useful, please consider making a small donation to my
+            paypal
+            <span class="todo label">(Link not ready)</span> to help fund
+            projects like this.
+          </p>
+        </div>
+        <div class="cell text-center"><a href="#install-banner" data-smooth-scroll class="button secondary">Install Foundation</a></div>
+      </div>
     </div>
-  </div>
+  </header>
+
+  <section id="install-banner" class="install-banner">
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x align-center">
+        <div class="cell text-center">
+          <h2>Installation</h2>
+          <p>
+            There are many ways to install Foundation, here are the main methods
+            I use:
+          </p>
+        </div>
+        <div class="cell medium-shrink">
+          <h3><small>Install as CLI</small></h3>
+          <ol>
+            <li>
+              <pre><code>npm install --global foundation-cli</code></pre>
+            </li>
+            <li>
+              <pre><code>foundation new --framework sites --template zurb/basic</code></pre>
+            </li>
+            <li>
+              <pre><code>cd project/path && npm start</code></pre>
+            </li>
+          </ol>
+        </div>
+        <div class="cell medium-shrink">
+          <h3><small>Install as Package</small></h3>
+          <pre><code>npm install --save foundation-sites</code></pre>
+        </div>
+        <div class="cell br"></div>
+        <div class="cell small-10 medium-7 large-4 text-center">
+          <hr />
+          <p>
+            More ways to install can be found
+            <a href="https://get.foundation/sites/docs/installation.html"
+              >here.</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="resources-references" class="resources-references">
+    <div class="grid-container">
+      <div class="cell">
+        <h2>Resources & References</h2>
+        <ul>
+          <li>
+            <a target="_blank" href="https://get.foundation/sites/docs/"
+              >Foundation Docs</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://en.wikipedia.org/wiki/CSS_framework"
+              >CSS Framework | <small>Wikipedia</small></a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
+              >HTML elements reference | <small>MDN web docs</small></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="cell">
+        <h3><small>Snippets</small></h3>
+        <dl>
+          <dt>Default Section Layout</dt>
+          <dd>
+            <pre><code>section#name.name>div.grid-container>div.cell>h2+p</code></pre>
+          </dd>
+          <br />
+          <dt>HTML needs to be escaped!</dt>
+          <dd>
+            <pre><code> &lt;span&gt;&lt;/span&gt; </code></pre>
+          </dd>
+          <br />
+          <dt>CDN Links</dt>
+          <dd>
+            <pre>
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.1/dist/css/foundation.min.css" crossorigin="anonymous"&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.1/dist/js/foundation.min.js" crossorigin="anonymous"&gt;&lt;/script&gt;
+            </pre>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </section>
 </main>

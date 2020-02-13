@@ -62,3 +62,8 @@
 // Motion UI
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+// Custom Components
+@import "components/welcome-hero";
+@import "components/install-banner";
+@import "components/resources-references";
