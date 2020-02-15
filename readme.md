@@ -1,8 +1,8 @@
-# foundation.d11z.com
+# [foundation.d11z.com](https://foundation.d11z.com/)
 
 [![devDependency Status](https://david-dm.org/zurb/foundation-zurb-template/dev-status.svg)](https://david-dm.org/zurb/foundation-zurb-template#info=devDependencies)
 
-This is a personal exploration project using the [Foundation for Sites](http://foundation.zurb.com/sites) "ZURB" template for website development. It has a Gulp-powered build system with these features:
+This is a personal exploration project using the [Foundation for Sites](https://get.foundation/sites) "ZURB" template for website development. It has a Gulp-powered build system with these features:
 
 - Handlebars HTML templates with Panini
 - Sass compilation and prefixing
