@@ -1,0 +1,14 @@
+{
+	"title": "Installation",
+	"content": "There are many ways to install Foundation, here are the main methods I use:",
+	"install-cli-steps-title": "Install as CLI",
+	"install-cli-steps": [
+		"npm install --global foundation-cli\n",
+		"foundation new --framework sites --template zurb/basic\n",
+		"cd project/path && npm start"
+	],
+	"install-as-package-title": "Install as Package",
+	"install-as-package": "npm install --save foundation-sites",
+	"more-options-url": "https://get.foundation/sites/docs/installation.html",
+	"more-options-text": "More Installation Options"
+}

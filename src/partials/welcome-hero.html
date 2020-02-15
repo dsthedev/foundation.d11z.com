@@ -1,0 +1,25 @@
+<header id="welcome-hero" class="welcome-hero">
+  <div class="grid-container">
+    <div class="grid-x grid-padding-x align-center">
+      <div class="cell shrink callout large text-center">
+        <h1>
+          {{ welcome-hero.title }}<br />
+          <span class="h4">
+            <small>{{ welcome-hero.subtitle }}</small>
+          </span>
+        </h1>
+      </div>
+      <div class="cell meduim-10 large-8">
+        <p>{{{ welcome-hero.content }}}</p>
+      </div>
+      <div class="cell text-center">
+        <a
+          href="{{ welcome-hero.jump-url }}"
+          data-smooth-scroll
+          class="button secondary"
+          >{{ welcome-hero.jump-text }}</a
+        >
+      </div>
+    </div>
+  </div>
+</header>

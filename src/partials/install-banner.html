@@ -1,0 +1,30 @@
+<section id="install-banner" class="install-banner">
+  <div class="grid-container">
+    <div class="grid-x grid-padding-x align-center">
+      <div class="cell text-center">
+        <h2>{{ install-banner.title }}</h2>
+        <p>{{ install-banner.content }}</p>
+      </div>
+      <div class="cell medium-shrink">
+        <h3><small>{{ install-banner.install-cli-steps-title }}</small></h3>
+        <pre class="line-numbers">
+<code class="lang-shell">{{#each install-banner.install-cli-steps }}{{ this }}{{/each}}</code></pre>
+      </div>
+      <div class="cell medium-shrink">
+        <h3><small>{{ install-banner.install-as-package-title }}</small></h3>
+        <pre><code class="lang-shell">{{ install-banner.install-as-package}}</code></pre>
+      </div>
+      <div class="cell br"></div>
+      <div class="cell small-10 medium-7 large-4 text-center">
+        <hr />
+        <p>
+          <a
+            class="button small secondary"
+            href="{{ install-banner.more-options-url}}"
+            >{{ install-banner.more-options-text}}</a
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

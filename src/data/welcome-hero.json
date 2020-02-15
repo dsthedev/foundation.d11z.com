@@ -1,0 +1,7 @@
+{
+	"title": "Welcome to Foundation",
+	"subtitle": "The Most Advanced Front-end Framework in the World!",
+	"content": "Foundation is the most advanced <span data-tooltip tabindex=\"1\" title=\"A library allowing for easier, more standards-compliant web design.\">front-end framework</span> in the world. This site serves as a showcase of the framework's features, documentation for it, and my own personal commentary. If you find it useful, please consider making a small donation to my paypal <span class=\"todo label\">(Link not ready)</span> to help fund projects like this.",
+	"jump-url": "#install-banner",
+	"jump-text": "Installation Steps"
+}
