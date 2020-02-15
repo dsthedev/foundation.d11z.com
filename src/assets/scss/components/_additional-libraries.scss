@@ -1,0 +1,7 @@
+.additional-libraries {
+	background-color: rgba($color: $topbar-background, $alpha: 0.4);
+	border-bottom: $hr-border;
+	pre code {
+		border: none;
+	}
+}

@@ -36,7 +36,7 @@ cd path/to/foundation.d11z.com
 npm start
 ```
 
-To create compressed, production-ready assets, run `npm build`.
+To create compressed, production-ready assets, run `npm run build`.
 
 ## Publish
 
@@ -77,6 +77,7 @@ To publish this project to a live domain, I recommend using the SFTP plugin for 
 - [NVM](https://github.com/nvm-sh/nvm) - I recommend using this to manage node / npm on your computer to easily switch versions in case a new version breaks something.
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - Auto format most files with common standards
   - I recommend using `"editor.formatOnSave": true` for almost thought-free cleaner code
+- [Add PrismJS to Foundation](https://www.dsthedev.com/configuration/add-prismjs-code-highlighting-to-foundation-for-sites/)
 
 ## Known Issues
 

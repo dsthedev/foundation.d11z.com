@@ -1,4 +1,15 @@
 {
-  "presets": [ "@babel/preset-env" ],
-  "compact": false
+  "presets": ["@babel/preset-env"],
+  "compact": false,
+  "plugins": [
+    [
+      "prismjs",
+      {
+        "languages": ["javascript", "css", "markup"],
+        "plugins": ["line-numbers", "file-highlight"],
+        "theme": "okaidia",
+        "css": true
+      }
+    ]
+  ]
 }

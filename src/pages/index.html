@@ -33,7 +33,11 @@ layout: default
             projects like this.
           </p>
         </div>
-        <div class="cell text-center"><a href="#install-banner" data-smooth-scroll class="button secondary">Install Foundation</a></div>
+        <div class="cell text-center">
+          <a href="#install-banner" data-smooth-scroll class="button secondary"
+            >Install Foundation</a
+          >
+        </div>
       </div>
     </div>
   </header>
@@ -80,15 +84,169 @@ layout: default
     </div>
   </section>
 
+  <section id="features" class="features">
+    <div class="grid-container text-center">
+      <h2>Features</h2>
+      <ul
+        class="grid-x grid-padding-x small-up-2 medium-up-4 align-center no-bullet"
+      >
+        <li class="cell callout large">
+          <img src="assets/img/copy-black.png" alt="Asset Copying" />
+          <h3 class="h4">
+            <small><strong>Asset Copying</strong></small>
+          </h3>
+          <p>
+            Gulp copies <em>everything</em> from <code>src/assets/</code> to
+            <code>dist/assets/</code>
+          </p>
+        </li>
+        <li class="cell callout large">
+          <img src="assets/img/script-black.png" alt="Page Compilation" />
+          <h3 class="h4">
+            <small><strong>Page Compilation</strong></small>
+          </h3>
+          <p>
+            Use <code>pages/</code>, <code>partials/</code>, and
+            <code>layouts</code> in <code>src/</code> to dynamically build pages
+            out using Panini/Handlebars
+          </p>
+        </li>
+        <li class="cell callout large">
+          <img src="assets/img/css-black.png" alt="Sass Compilation" />
+          <h3 class="h4">
+            <small><strong>Sass Compilation</strong></small>
+          </h3>
+          <p>
+            Customize every inch of the framework, add component based partials
+            and have it all compiled with Libsass into a single tidy
+            <code>app.css</code> file
+          </p>
+        </li>
+        <li class="cell callout large">
+          <img src="assets/img/js-black.png" alt="JavaScript Compilation" />
+          <h3 class="h4">
+            <small><strong>JavaScript Compilation</strong></small>
+          </h3>
+          <p>
+            JS is transpiled using Babel using ES2015 features, bundled by
+            webpack, also compiled into a single tidy <code>app.js</code> file
+          </p>
+        </li>
+        <li class="cell callout large">
+          <img src="assets/img/img-black.png" alt="Image Compression" />
+          <h3 class="h4">
+            <small><strong>Image Compression</strong></small>
+          </h3>
+          <p>
+            Images are copied as-is from <code>assets/img</code> to
+            <code>dist/</code>, and ran through gulp-imagin to compress during a
+            production build
+          </p>
+        </li>
+        <li class="cell callout large">
+          <img src="assets/img/sync-black.png" alt="BrowerSync" />
+          <h3 class="h4">
+            <small><strong>BrowerSync</strong></small>
+          </h3>
+          <p>
+            Automagically refresh any browser viewing
+            <code
+              ><a target="_blank" href="http://localhost:8000"
+                >localhost:8000</a
+              ></code
+            >
+            whenever specified files are changed
+          </p>
+        </li>
+        <li class="cell callout large">
+          <img src="assets/img/style-black.png" alt="Style Guide Creation" />
+          <h3 class="h4">
+            <small><strong>Style Guide Creation</strong></small>
+          </h3>
+          <p>
+            Foundation includes an autmatic styleguide creator using their Style
+            Sherpa plugin & only 2 files in <code>src/styleguide/</code>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="additional-libraries" class="additional-libraries">
+    <div class="grid-container">
+      <div class="cell">
+        <h2>Additional Libraries</h2>
+        <p>
+          Foundation is awesome, but it can't do everything! Listed here are a
+          few useful libraries either used on this site or the many client sites
+          I develop(ed):
+        </p>
+        <ul>
+          <li>
+            <code>prism.js</code>: An amazing code highlighter, it's
+            <em>highly</em> recommended if you display even a moderate amount of
+            code anywhere on a site.
+            <a href="https://prismjs.com/#basic-usage">Prism Docs</a>
+          </li>
+          <li>?</li>
+        </ul>
+      </div>
+      <div class="cell">
+        <h3>
+          <small>Example of <strong>PrismJS</strong></small>
+        </h3>
+        <pre class="line-numbers" data-start="-2">
+<code class="language-javascript">{
+  "presets": ["@babel/preset-env"],
+  "compact": false,
+  "plugins": [
+    [
+      "prismjs",
+      {
+        "languages": ["javascript", "css", "markup"],
+        "plugins": ["line-numbers", "file-highlight"],
+        "theme": "okaidia",
+        "css": true
+      }
+    ]
+  ]
+}</code>
+</pre>
+      </div>
+    </div>
+  </section>
+
   <section id="resources-references" class="resources-references">
     <div class="grid-container">
       <div class="cell">
         <h2>Resources & References</h2>
         <ul>
           <li>
+            <em>dsthedev's docs:</em>
+            <ul>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.dsthedev.com/configuration/add-prismjs-code-highlighting-to-foundation-for-sites/"
+                  >Add PrismJS Code Highlighting to Foundation for Sites</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
             <a target="_blank" href="https://get.foundation/sites/docs/"
               >Foundation Docs</a
             >
+            <ul>
+              <li>
+                <a
+                  href="https://get.foundation/sites/docs/panini.html"
+                  target="_blank"
+                  >Panini</a
+                >
+              </li>
+              <li>?</li>
+            </ul>
           </li>
           <li>
             <a
