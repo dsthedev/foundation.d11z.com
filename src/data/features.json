@@ -1,0 +1,41 @@
+{
+	"title": "Features",
+	"content": "Foundation uses a modern and complex developer build process to provide a modern, efficient, and exemplary end-product.  Here are the main feature's highlights:",
+	"feature-list": [
+		{
+			"img-src" : "assets/img/copy-black.png",
+			"title" : "Asset Copying",
+			"content" : "Gulp copies <em>everything</em> from <code>src/assets/</code> to <code>dist/assets/</code>"
+		},
+		{
+			"img-src" : "assets/img/script-black.png",
+			"title" : "Page Compilation",
+			"content" : "Use <code>pages/</code>, <code>partials/</code>, and <code>layouts</code> in <code>src/</code> to dynamically build pages out using Panini/Handlebars"
+		},
+		{
+			"img-src" : "assets/img/css-black.png",
+			"title" : "Sass Compilation",
+			"content" : "Customize every inch of the framework, add component based partials and have it all compiled with Libsass into a single tidy <code>app.css</code> file"
+		},
+		{
+			"img-src" : "assets/img/js-black.png",
+			"title" : "JavaScript Compilation",
+			"content" : "JS is transpiled using Babel using ES2015 features, bundled by webpack, also compiled into a single tidy <code>app.js</code> file"
+		},
+		{
+			"img-src" : "assets/img/img-black.png",
+			"title" : "Image Compression",
+			"content" : "Images are copied as-is from <code>assets/img</code> to <code>dist/</code>, and ran through gulp-imagin to compress during a production build"
+		},
+		{
+			"img-src" : "assets/img/sync-black.png",
+			"title" : "BrowerSync",
+			"content" : "Automagically refresh any browser viewing <code><a target=\"_blank\" href=\"http://localhost:8000\">localhost:8000</a></code> whenever specified files are changed"
+		},
+		{
+			"img-src" : "assets/img/style-black.png",
+			"title" : "Style Guide Creation",
+			"content" : "Foundation includes an autmatic styleguide creator using their Style Sherpa plugin & only 2 files in <code>src/styleguide/</code>"
+		}
+	]
+}

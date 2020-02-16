@@ -1,0 +1,38 @@
+<section id="additional-libraries" class="additional-libraries">
+  <div class="grid-container">
+    <div class="cell">
+      <h2>{{ additional-libraries.title}}</h2>
+      <p>{{ additional-libraries.content}}</p>
+      <ul>
+        {{#each additional-libraries.lib-list }}
+        <li>{{{ this }}}</li>
+        {{/each}}
+      </ul>
+    </div>
+
+    {{! This example section isn't extracted to a data json file until more are
+    needed and a clean multiline solution is found for larger code snippets. }}
+    <div class="cell">
+      <h3>
+        <small>Example of <strong>PrismJS</strong></small>
+      </h3>
+      <pre class="line-numbers" data-start="-2">
+<code class="lang-js">{
+  "presets": ["@babel/preset-env"],
+  "compact": false,
+  "plugins": [
+    [
+      "prismjs",
+      {
+        "languages": ["javascript", "css", "markup"],
+        "plugins": ["line-numbers", "file-highlight"],
+        "theme": "okaidia",
+        "css": true
+      }
+    ]
+  ]
+}</code>
+</pre>
+    </div>
+  </div>
+</section>

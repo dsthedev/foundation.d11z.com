@@ -1,0 +1,13 @@
+{
+	"title": "Additional Libraries",
+	"content": "Foundation is awesome, but it can't do everything! Listed here are a few useful libraries either used on this site or the many client sites I develop(ed):",
+	"lib-list": [
+		"<code>prism.js</code>: An amazing code highlighter, it's usage is <em>highly</em> recommended if you display more than a small amount of code throughout a site. <a href=\"https://prismjs.com/#basic-usage\">Prism Docs</a>"
+	],
+	"lib-examples": [
+		{
+			"name": "PrismJS",
+			"snippet": "@todo find a cleaner multiline solution here!"
+		}
+	]
+}
