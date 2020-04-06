@@ -1,63 +1,80 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>d11z's' Foundation -- {{ title }} | dsthedev</title>
-    <meta name="description" content="{{ description }}" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{{root}}assets/css/app.css" />
-  </head>
-  <body class="{{ page }}">
-    {{> browserupgrade}}
 
-    <header id="site-header" role="banner">
-      <div class="top-bar">
-        <div class="top-bar-left">
-          <ul class="menu">
-            <li>
-              <a href="{{ root }}">Foundation</a>
-            </li>
-          </ul>
-        </div>
-        <div class="top-bar-right">
-          <ul class="menu">
-            <li><a href="{{ root }}/about">About</a></li>
-            <li><a href="{{ root }}/styleguide">Style Guide</a></li>
-            <li><a href="{{ root }}/404">404</a></li>
-          </ul>
-        </div>
+<head>
+  <meta charset="utf-8" />
+  <title>d11z's' Foundation -- {{ title }} | dsthedev</title>
+  <meta name="description" content="{{ description }}" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{{root}}assets/css/app.css" />
+</head>
+
+<body class="{{ page }}">
+  {{> browserupgrade}}
+
+  <header id="site-header" role="banner">
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li>
+            <a href="{{ root }}">Foundation</a>
+          </li>
+        </ul>
       </div>
-    </header>
+      <div class="top-bar-right">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="is-dropdown-submenu-parent">
+            <a href="#">Components</a>
+            <ul class="menu">
+              <li><a href="#">Containers</a>
+                <ul class="menu">
+                  <li><a href="{{ root }}/components/sticky-header/">Sticky</a></li>
+                  <!-- ... -->
+                </ul>
+              </li>
+            </ul>
+          </li>
 
-    {{> body}}
-
-    <footer id="site-footer" class="title-bar" role="contentinfo">
-      <div class="grid-container text-center">
-        <p class="h5 copyright">
-          &copy; dsthedev<br /><small>Powered by Foundation</small>
-        </p>
-
-        <p class="source-org">
-          Made by
-          <a href="https://www.dsthedev.com/" target="_blank">dsthedev</a> with
-          <strong>&heartsuit;</strong>
-        </p>
+          <li><a href="{{ root }}/about">About</a></li>
+          <li><a href="{{ root }}/styleguide">Style Guide</a></li>
+          <li><a href="{{ root }}/404.html">404</a></li>
+        </ul>
+        <ul class="menu">
+        </ul>
       </div>
-    </footer>
+    </div>
+  </header>
 
-    <script src="{{root}}assets/js/app.js"></script>
+  {{> body}}
 
-    <script>
-      window.ga = function() {
-        ga.q.push(arguments);
-      };
-      ga.q = [];
-      ga.l = +new Date();
-      ga("create", "UA-125120979-4", "auto");
-      ga("set", "transport", "beacon");
-      ga("send", "pageview");
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
-  </body>
+  <footer id="site-footer" class="title-bar" role="contentinfo">
+    <div class="grid-container text-center">
+      <p class="h5 copyright">
+        &copy; dsthedev<br /><small>Powered by Foundation</small>
+      </p>
+
+      <p class="source-org">
+        Made by
+        <a href="https://www.dsthedev.com/" target="_blank">dsthedev</a> with
+        <strong>&heartsuit;</strong>
+      </p>
+    </div>
+  </footer>
+
+  <script src="{{root}}assets/js/app.js"></script>
+
+  <script>
+    window.ga = function () {
+      ga.q.push(arguments);
+    };
+    ga.q = [];
+    ga.l = +new Date();
+    ga("create", "UA-125120979-4", "auto");
+    ga("set", "transport", "beacon");
+    ga("send", "pageview");
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
 </html>

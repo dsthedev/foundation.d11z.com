@@ -1,0 +1,105 @@
+---
+title: Sticky
+layout: blank
+description: A personal exploration of the Foundation front-end framework for website development.
+---
+
+<header id="site-header" class="sticky-container" data-sticky-container>
+  <div class="sticky" data-sticky data-options="marginTop:0;" data-sticky-on="small">
+    <div class="top-bar">
+      <div class="grid-container">
+        <div class="grid-x grid-padding-x align-middle">
+
+          <div class="cell shrink">
+            <ul class="menu simple">
+              <li>
+                <h1 class="h3 home"><a href="{{ root }}">
+                    <img class="logo" src="{{ root }}/assets/img/logo.png">Site Title</a>
+                </h1>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="cell auto">
+            <ul class="dropdown menu align-right" data-dropdown-menu>
+              <li class="is-dropdown-submenu-parent">
+                <a href="#">Components</a>
+                <ul class="menu">
+                  <li><a href="#">Containers</a>
+                    <ul class="menu">
+                      <li><a href="{{ root }}/components/sticky-header/">Sticky</a></li>
+                      <!-- ... -->
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li><a href="{{ root }}/about">About</a></li>
+              <li><a href="{{ root }}/styleguide">Style Guide</a></li>
+              <li><a href="{{ root }}/404.html">404</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="cell small-12">
+        <h1>{{ title }}</h1>
+      </div>
+      <div class="cell small-12">
+        <p class="lead">
+          Stick nearly anything, anywhere you like!
+        </p>
+
+        <p>
+          Add the <code>.sticky</code> class and <code>data-sticky</code> to an element to create something that sticks.
+          Sticky elements must be wrapped in a container, which will determine your sizing and grid layout, with
+          <code>data-sticky-container</code>.
+        </p>
+      </div>
+      <div class="cell small-6" id="stickysidebarexample">
+        <h2>Relax, it Sticks!</h2>
+        <hr>
+        <p class="lead">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+          anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+          anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+          anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+          anim id est laborum.
+        </p>
+      </div>
+      <div class="cell small-6 right sticky-container" data-sticky-container>
+        <div class="sticky" data-sticky data-margin-top="4" data-anchor="stickysidebarexample" data-sticky-on="small"
+          data-events="resize">
+          <img class="thumbnail" src="{{ root }}/assets/img/zen.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
