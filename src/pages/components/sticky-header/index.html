@@ -1,7 +1,7 @@
 ---
 title: Sticky
 layout: blank
-description: A personal exploration of the Foundation front-end framework for website development.
+description: Stick nearly anything, anywhere you like!
 ---
 
 <header id="site-header" class="sticky-container" data-sticky-container>
@@ -9,25 +9,28 @@ description: A personal exploration of the Foundation front-end framework for we
     <div class="top-bar">
       <div class="grid-container">
         <div class="grid-x grid-padding-x align-middle">
-
           <div class="cell shrink">
             <ul class="menu simple">
               <li>
-                <h1 class="h3 home"><a href="{{ root }}">
-                    <img class="logo" src="{{ root }}/assets/img/logo.png">Site Title</a>
+                <h1 class="h3 home">
+                  <a href="{{ root }}">
+                    <img class="logo" src="{{ root }}/assets/img/logo.png" />Site Title</a>
                 </h1>
               </li>
             </ul>
           </div>
-          
+
           <div class="cell auto">
             <ul class="dropdown menu align-right" data-dropdown-menu>
               <li class="is-dropdown-submenu-parent">
                 <a href="#">Components</a>
                 <ul class="menu">
-                  <li><a href="#">Containers</a>
+                  <li>
+                    <a href="#">Containers</a>
                     <ul class="menu">
-                      <li><a href="{{ root }}/components/sticky-header/">Sticky</a></li>
+                      <li>
+                        <a href="{{ root }}/components/sticky-header/">Sticky</a>
+                      </li>
                       <!-- ... -->
                     </ul>
                   </li>
@@ -47,57 +50,120 @@ description: A personal exploration of the Foundation front-end framework for we
 
 <main id="main-content">
   <div class="grid-container">
-    <div class="grid-x grid-margin-x">
-      <div class="cell small-12">
-        <h1>{{ title }}</h1>
-      </div>
-      <div class="cell small-12">
-        <p class="lead">
-          Stick nearly anything, anywhere you like!
-        </p>
+    <div class="grid-x grid-margin-x align-center">
 
+      <section class="cell small-10 medium-6 large-4 text-center">
+        <h1>{{ title }}</h1>
+        <div class="callout small">
+          <p class="lead">{{ description }}</p>
+        </div>
+      </section>
+
+      <div class="cell small-12"></div>
+
+      <div class="cell small-10 medium-8 large-6">
         <p>
-          Add the <code>.sticky</code> class and <code>data-sticky</code> to an element to create something that sticks.
-          Sticky elements must be wrapped in a container, which will determine your sizing and grid layout, with
-          <code>data-sticky-container</code>.
+          Add the <code>.sticky</code> class and <code>data-sticky</code> to
+          an element to create something that sticks. Sticky elements must be
+          wrapped in a container, which will determine your sizing and grid
+          layout, with <code>data-sticky-container</code>.
         </p>
       </div>
-      <div class="cell small-6" id="stickysidebarexample">
-        <h2>Relax, it Sticks!</h2>
-        <hr>
+
+      <div class="cell small-12 text-center">
+        <a href="#article-header" class="button large" data-smooth-scroll data-offset="48">&ddarr; Try it Out &ddarr;</a>
+      </div>
+
+      <article class="cell small-order-2 medium-order-1 medium-6" id="stickysidebarexample">
+        <h2 id="article-header">Relax, it Sticks!</h2>
+        <hr />
         <p class="lead">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-          anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
         </p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-          anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
         </p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-          anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
         </p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-          anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
         </p>
-      </div>
-      <div class="cell small-6 right sticky-container" data-sticky-container>
-        <div class="sticky" data-sticky data-margin-top="4" data-anchor="stickysidebarexample" data-sticky-on="small"
+      </article>
+
+      <aside class="cell small-order-1 medium-order-2 medium-6 sticky-container" data-sticky-container>
+        <div class="sticky" data-sticky data-margin-top="4" data-anchor="stickysidebarexample" data-sticky-on="medium"
           data-events="resize">
-          <img class="thumbnail" src="{{ root }}/assets/img/zen.jpg">
+          <figure class="card">
+            <img src="{{ root }}/assets/img/zen.jpg" />
+            <figcaption class="card-section">
+              <strong>Note</strong>: This image should be first on mobile, and
+              sticky in a right column on medium up.
+            </figcaption>
+          </figure>
+        </div>
+      </aside>
+
+      <div class="cell small-12 small-order-3">
+        <div class="card">
+          <h2 class="card-divider">
+            Content Divider
+          </h2>
+
+          <p class="card-section">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+            <blockquote>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum.
+            </blockquote>
+          </p>
+
+          <p class="card-section">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+
+          <span class="title-bar">Brought to you by Cheezy Poofs.</span>
         </div>
       </div>
     </div>
