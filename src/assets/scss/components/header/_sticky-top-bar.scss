@@ -1,0 +1,35 @@
+// Use the site header id to specifically layer it and prioritize z index over all other sticky items
+#site-header {
+  .sticky {
+    z-index: 100;
+  }
+}
+
+.top-bar {
+  transition: ease-in-out 0.5s;
+  .menu {
+    background-color: inherit;
+    .menu {
+      background-color: $white;
+    }
+  }
+  .grid-container {
+    width: 100%;
+  }
+  .logo {
+    transition: ease-in-out 0.25s;
+    max-height: 3rem;
+    margin-right: $global-margin;
+  }
+  h1 {
+    margin: 0;
+  }
+}
+.is-stuck {
+  .top-bar {
+    background-color: $medium-gray;
+    .logo {
+      max-height: 2rem;
+    }
+  }
+}
